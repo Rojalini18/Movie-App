@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    <link
+      rel="shortcut icon"
+      href="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/plugins/SVG/jellyfin-plugin-omdb.svg?sanitize=true"
+      type="image/x-icon"
+    />
+    <title>OMDB Movie App</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Search Movie</h1>
+    </div>
+    <div class="moviesearch">
+      <input
+        type="text"
+        oninput="searchMovie()"
+        id="movieTitle"
+        placeholder="Enter Movie name"
+      />
+      <button onclick="searchMovie('button')">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <div class="searchMovie"></div>
+    <h1>Trending</h1>
+    <div class="movieDetials"></div>
+  </body>
+</html>
+
+<script src="./script/index.js"></script>
